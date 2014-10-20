@@ -1,63 +1,27 @@
-/* 
-your CSS rules and font imports should go here 
-delete this comment, add the import directives for your fonts
-and add the CSS rules as described in the challenge
-*/
-
 @import url(https://fonts.googleapis.com/css?family=Raleway:300);
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400);
 
-
 body {
-	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	background-image: url(../img/background.jpg);
 	background-size: cover;
 	background-attachment: fixed;
+	
 }
 
-h1, h2, h3 {
-	font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', sans-serif;
-	font-weight: 300;
-}
-
-h2, h3 {
-	color: #505050;
-}
-
-h1 {
-	font-size: 300%;
-	margin: 0;
-}
-
-h2 {
-	font-size: 150%;
-}
-
-h3 {
-	font-size: 125%;
-}
-
-a:visited, a:link {
-	text-decoration: none;
-	color: #0000AA;
-}
-
-a:hover, input:focus {
-	color: #0000EE;
-}
 
 main {
-	margin: 20px 20px 20px 30%; 
-	background-image: url(../img/ricepaper_v3.png);
+	margin: 20px 20px 20px 30%;
 	opacity: 0.9;
+	background-image: url(../img/ricepaper_v3.png); 
+
 }
 
 header {
-	padding: 1em;
-	background-color: #FA5A0F; 
-	border-bottom: 5px solid #EA4A00; 
+	background-color: #FA5A0F;
+	border-bottom: 5px solid #EA4A00;
 	color: #FFFFFF;
 }
 
@@ -67,13 +31,44 @@ header p {
 	margin: 0;
 }
 
-#general {
-	padding: 1em;
+h1, h2, h3 {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;	
+	font-weight: 300;
 }
 
+h1 {
+	font-size: 300%;
+	margin: 0;
+}
+
+h2, h3 {
+	color: #505050;
+}
+
+h2 {
+	font-size: 150%;
+	margin: 0;
+}
+
+h3 {
+	font-size: 125%;
+}
+
+a:link, a:visited { 
+	color: #0000AA;
+	text-decoration:none;
+}
+
+a:hover, input:focus {
+	color: #0000EE;
+}
+
+#general, #menu, #aboutus, footer, header{
+	padding: 1em; 
+} 
+
 #menu {
-	padding: 1em;
-	background-color: rgba(207,205,140,0.5);
+	background-color: rgba(207, 205, 140, 0.5);
 }
 
 dt {
@@ -86,14 +81,10 @@ dd {
 	margin: 0 0 1em 1em;
 }
 
-#aboutus {
-	padding: 1em;
-}
-
 footer {
-	padding: 1em;
 	background-color: #FC892F;
 	border-top: 5px solid #EC791F;
-	font-size: 80%; 
+	font-size: 80%;
 	text-align: right;
+	font-style: italic;
 }
